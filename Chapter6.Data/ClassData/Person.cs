@@ -1,15 +1,17 @@
-﻿using System.Data.Common;
+﻿
+using System.Data.Common;
 
 namespace Chapter6.Data.ClassData
 {
-    public class Person : IComparable
+    public class Person : IComparable, IDisposable
     {
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
 
         public List<Person> Children = new List<Person>();
 
-        public void WriteToConsole()
+        bool disposed = false;
+        public virtual void WriteToConsole()
         {
             Console.WriteLine($"Name : {Name}\nDOB : {DateOfBirth}");
         }
@@ -90,6 +92,30 @@ namespace Chapter6.Data.ClassData
         public int CompareTo(Person obj)
         {
             return Name.CompareTo(obj.Name); 
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        ~Person()
+        {
+            if (disposed) return;
+            Dispose(false);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed) return;
+            // deallocate the *unmanaged* resource 
+            // ...
+            if (disposing)
+            {
+                // deallocate any other *managed* resources 
+                // ... 
+            }
+            disposed = true;
         }
     }
 }

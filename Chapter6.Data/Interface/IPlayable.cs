@@ -10,5 +10,9 @@ namespace Chapter6.Data.Interface
     {
         void PLay();
         void Pause();
+        void Stop()
+        {
+            Console.WriteLine("Default implementation of Stop.");
+        }
     }
 }

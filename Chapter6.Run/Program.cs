@@ -1,5 +1,6 @@
 ﻿
 using Chapter6.Data.ClassData;
+using Chapter6.Data.Generic;
 using Chapter6.Data.Interface;
 
 
@@ -37,10 +38,30 @@ using Chapter6.Data.Interface;
 
 //Console.WriteLine();
 
-IPlayable video = new VideoPlayer();
-IPlayable audio = new AudioPLayer();
+//IPlayable video = new VideoPlayer();
+//IPlayable audio = new AudioPLayer();
 
-video.PLay();
-audio.PLay();
-video.Pause();
-audio.Pause();
+//video.PLay();
+//audio.PLay();
+//video.Pause();
+//audio.Pause();
+
+//var genericoObj = new MyGeneric<string>();
+//genericoObj.WriteToConsole(50);
+
+//Employee john = new Employee
+//{ Name = "Alice", EmployeeCode = "AA123" };
+
+//Person person = john as Person ;
+//Employee emp = (Employee)person;
+//john.WriteToConsole();
+//person.WriteToConsole();
+//Console.WriteLine(john.ToString()  );
+//Console.WriteLine(person.ToString());
+
+Employee aliceInEmployee = new Employee
+{ Name = "Alice", EmployeeCode = "AA123" };
+
+Person aliceInPerson = aliceInEmployee;
+
+Employee explicitAlice = (Employee)aliceInPerson;
