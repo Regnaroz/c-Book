@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chapter5", "chapter5\chapte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter5.Shared", "Chapter5.Shared\Chapter5.Shared.csproj", "{EB6DB796-1EFD-4914-92AE-0888F3F2BA51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter6.Run", "Chapter6.Run\Chapter6.Run.csproj", "{8761FF7E-B7D2-40BB-A726-2DD0D69FFAB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter6.Run", "Chapter6.Run\Chapter6.Run.csproj", "{8761FF7E-B7D2-40BB-A726-2DD0D69FFAB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter6.Data", "Chapter6.Data\Chapter6.Data.csproj", "{AE93459D-651B-4D9B-8CE5-5984A91328AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter6.Data", "Chapter6.Data\Chapter6.Data.csproj", "{AE93459D-651B-4D9B-8CE5-5984A91328AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chapter8.Run", "chapter8.Run\chapter8.Run.csproj", "{6A63C579-4F16-4B8C-A1BC-6011EDCBF6F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AE93459D-651B-4D9B-8CE5-5984A91328AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE93459D-651B-4D9B-8CE5-5984A91328AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE93459D-651B-4D9B-8CE5-5984A91328AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A63C579-4F16-4B8C-A1BC-6011EDCBF6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A63C579-4F16-4B8C-A1BC-6011EDCBF6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A63C579-4F16-4B8C-A1BC-6011EDCBF6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A63C579-4F16-4B8C-A1BC-6011EDCBF6F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
